@@ -2,6 +2,7 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 import {ApplicationComponent} from './components/application/application';
 import {CarouselComponent} from "./components/carousel/carousel";
@@ -18,7 +19,8 @@ import {FilterPipe} from './pipes/filter-pipe';
 @NgModule({
     imports:      [ 
         BrowserModule,
-        ReactiveFormsModule, 
+        ReactiveFormsModule,
+        FormsModule,
         RouterModule.forRoot([
             {
                 path: '', 
